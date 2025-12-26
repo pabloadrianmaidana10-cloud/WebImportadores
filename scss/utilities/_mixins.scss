@@ -1,0 +1,22 @@
+@import "./variables";
+
+// centrado flex //
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// media query tablet //
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+// media query desktop //
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}

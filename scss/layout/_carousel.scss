@@ -1,0 +1,32 @@
+.carousel-inner img {
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  background-size: 60%;
+  width: 45px;
+  height: 45px;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner img {
+    max-height: 420px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner img {
+    max-height: 450px;
+  }
+}

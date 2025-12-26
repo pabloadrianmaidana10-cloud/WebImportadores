@@ -1,0 +1,14 @@
+// Placeholders utilizados con @extend
+
+%img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+%btn-base {
+  @include flex-center;
+  padding: 0.8rem 1.2rem;
+  border-radius: $radius-sm;
+  text-decoration: none;
+  cursor: pointer;
+}

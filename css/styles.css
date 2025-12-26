@@ -1,69 +1,79 @@
-/* =========================
-   BASE
-========================= */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-/* Imágenes responsive (buena práctica) */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* =========================
-   HEADER / HERO
-========================= */
+.index-header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .index-header {
   min-height: 95vh;
   background-image: url(../img/header-img-2.jpeg);
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
 }
-
 .index-header section {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-/* Título principal */
 .index-header h1 {
-  font-size: 1.6rem; /* Mobile first */
+  font-size: 1.6rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
+@media (min-width: 768px) {
+  .index-header h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .index-header h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .index-header {
+    padding: 3rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .index-header {
+    padding: 5rem 3rem;
+  }
+}
 
-/* Botón PDF */
 .index-header-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 0.8rem 1.2rem;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 0.3rem;
-  text-decoration: none;
-  cursor: pointer;
-
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
   width: 100%;
   max-width: 320px;
   margin: 0.8rem auto 0;
 }
-
 .index-header-btn:hover {
   opacity: 0.9;
 }
+@media (min-width: 768px) {
+  .index-header-btn {
+    max-width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .index-header-btn {
+    max-width: 420px;
+  }
+}
 
-/* =========================
-   CAROUSEL
-========================= */
 .carousel-inner img {
   max-height: 520px;
   object-fit: contain;
@@ -83,19 +93,25 @@ img {
   height: 45px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+@media (min-width: 768px) {
+  .carousel-inner img {
+    max-height: 420px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-inner img {
+    max-height: 450px;
+  }
+}
 .footer {
   min-height: 250px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("../img/footer-img.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/footer-img.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,7 +123,6 @@ img {
   font-size: 1.5rem;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
-
 .footer-title span {
   display: block;
   font-weight: 300;
@@ -126,56 +141,14 @@ img {
   height: 40px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
 .logofooter:hover {
   transform: scale(1.1);
   opacity: 0.8;
 }
 
-/* =========================
-   MEDIA QUERIES – TABLET
-   >= 768px
-========================= */
-@media (min-width: 768px) {
-
-  .index-header {
-    padding: 3rem 2rem;
-  }
-
-  .index-header h1 {
-    font-size: 2rem;
-  }
-
-  .index-header-btn {
-    max-width: 360px;
-  }
-
-  .carousel-inner img {
-    max-height: 420px;
-    width: 100%;
-    object-fit: cover;
-  }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-/* =========================
-   MEDIA QUERIES – DESKTOP
-   >= 992px
-========================= */
-@media (min-width: 992px) {
-
-  .index-header {
-    padding: 5rem 3rem;
-  }
-
-  .index-header h1 {
-    font-size: 2.4rem;
-  }
-
-  .index-header-btn {
-    max-width: 420px;
-  }
-
-  .carousel-inner img {
-    max-height: 450px;
-  }
-}
+/*# sourceMappingURL=styles.css.map */
