@@ -1,0 +1,41 @@
+// Cards de productos //
+
+.product-card {
+  position: relative; 
+  overflow: hidden;   
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  }
+
+  // Accesibilidad //
+
+  &:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  }
+}
+
+// Imagen dentro de la card //
+
+.product-card .card-img-top {
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+// Botón dentro de la card //
+.product-card .btn {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.product-card:hover .btn {
+  transform: scale(1.03);
+  opacity: 0.95;
+}

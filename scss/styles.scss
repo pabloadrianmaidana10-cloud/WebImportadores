@@ -3,9 +3,11 @@
 @import "./utilities/placeholders";
 
 @import "./layout/header";
+@import "./layout/cards";
+@import "./layout/titles";
+@import "./layout/page-hero";
 @import "./layout/carousel";
 @import "./layout/footer";
-
 
 body {
   margin: 0;
