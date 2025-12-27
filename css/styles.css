@@ -1,3 +1,4 @@
+@charset "UTF-8";
 img {
   max-width: 100%;
   height: auto;
@@ -171,6 +172,50 @@ img {
     max-height: 450px;
   }
 }
+/* =========================
+   ANIMACIONES ACORDEÓN
+========================= */
+.accordion-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Contenido */
+.accordion-collapse {
+  transition: all 0.4s ease;
+}
+
+.accordion-body {
+  animation: fadeSlideIn 0.45s ease both;
+}
+
+/* Keyframes */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.accordion-button {
+  letter-spacing: 0.03em;
+}
+
+.accordion-collapse.show .table {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.accordion-collapse .table {
+  transform: scale(0.98);
+}
+
 .footer {
   min-height: 250px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/footer-img.jpeg");
