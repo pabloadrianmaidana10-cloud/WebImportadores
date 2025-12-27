@@ -216,6 +216,72 @@ img {
   transform: scale(0.98);
 }
 
+.izo-social--instagram {
+  display: inline-flex;
+  border-radius: 0.6rem;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.izo-social--instagram:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 10px 16px rgba(255, 255, 255, 0.35));
+}
+.izo-social--instagram:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.izo-social--whatsapp {
+  display: inline-flex;
+  border-radius: 0.6rem;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.izo-social--whatsapp:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 10px 16px rgba(255, 255, 255, 0.35));
+}
+.izo-social--whatsapp:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.izo-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.izo-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.izo-delay-3 {
+  animation-delay: 0.36s;
+}
+
+.izo-delay-4 {
+  animation-delay: 0.48s;
+}
+
+.izo-delay-5 {
+  animation-delay: 0.6s;
+}
+
+.izo-delay-6 {
+  animation-delay: 0.72s;
+}
+
+.footer .logoContainer a {
+  animation: izoFadeUp 0.55s ease both;
+}
+
+@keyframes izoFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .footer {
   min-height: 250px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/footer-img.jpeg");

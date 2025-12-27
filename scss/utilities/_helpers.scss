@@ -1,0 +1,38 @@
+// Footer - redes sociales //
+$footer-socials: (
+  instagram: #ffffff,
+  whatsapp: #ffffff
+);
+
+@each $name, $color in $footer-socials {
+  .izo-social--#{$name} {
+    display: inline-flex;
+    border-radius: .6rem;
+    transition: transform .25s ease, filter .25s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      filter: drop-shadow(0 10px 16px rgba($color, .35));
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color;
+      outline-offset: 4px;
+    }
+  }
+}
+
+@for $i from 1 through 6 {
+  .izo-delay-#{$i} {
+    animation-delay: #{$i * 0.12}s;
+  }
+}
+
+.footer .logoContainer a {
+  animation: izoFadeUp .55s ease both;
+}
+
+@keyframes izoFadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
